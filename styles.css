@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #ff9800, #ff5722);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Game Container */
+.game-container {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 400px;
+  background: #fff;
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #ff5722;
+}
+
+.subheading {
+  font-size: 1.2em;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* Board Styling */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #ff9800;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: #ff5722;
+}
+
+.cell.taken {
+  cursor: default;
+  background: #ff7043;
+}
+
+/* Status Message */
+.status {
+  font-size: 1.2em;
+  margin: 20px 0;
+  color: #444;
+}
+
+/* Restart Button */
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background: #ff5722;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #e64a19;
+}
